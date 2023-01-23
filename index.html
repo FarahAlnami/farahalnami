@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <title>Welcome to Saudi Arabia</title>
+    
+    <style>
+        body, html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+        background-color: #30584D;
+
+        }
+        #Hero {
+            background-image: url("622055-2585265337.jpg");
+            /* height: 100%; 
+            width: 100%; */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+        }
+        #TitleContainer{
+            position: relative;
+            width: 98vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #Title{
+            position: absolute;
+            background-color: transparent;
+            font-family: 'Anton', sans-serif;
+            font-size: 100px;
+            font-weight: 300;
+            text-align: center;
+            color: whitesmoke;
+            width: 1200px;
+            z-index: 1;
+
+        }
+        #Section1{
+            width: 100%;
+            height: 100%;
+            background-color: #8A6357;
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        #Riyadh{
+            position: absolute;
+            font-size: 5rem;
+            text-align: center;
+            width: 98vw;
+            height: 100vh; 
+            font-family: 'El Messiri', sans-serif;
+        }
+        #Image1{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: 22%;
+            left: 3%;
+        }
+        #Image2{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -18%;
+            left: 34.5%;
+        }
+        #Image3{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -58%;
+            left: 66%;
+        }
+        #Text1{
+            display: inline-flex;
+            text-align:center;
+            position: relative;
+            width: 75%;
+            font-size: 23px;
+            top: -55%;
+            left: 13%;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        #Section2{
+            width: 100%;
+            height: 100%;
+            background-color: #348bb3;
+            background-size: cover;
+            background-position: center;
+        }
+        #Jeddah{
+            position: absolute;
+            font-size: 5rem;
+            text-align: center;
+            width: 98vw;
+            height: 100vh;
+            font-family: 'El Messiri', sans-serif;
+        }
+        #Image4{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: 22%;
+            left: 3%;
+        }
+        #Image5{
+            display: flex;
+            position: relative;
+            width: 28%;
+            height: 40%;
+            top: -18%;
+            left: 35.5%;
+        }
+        #Image6{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -58%;
+            left: 66%;
+        }
+        #Text2{
+            display: inline-flex;
+            text-align:center;
+            position: relative;
+            width: 75%;
+            font-size: 23px;
+            top: -55%;
+            left: 13%;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        #Abha{
+            position: absolute;
+            font-size: 5rem;
+            text-align: center;
+            width: 98vw;
+            height: 100vh;
+            font-family: 'El Messiri', sans-serif;
+        }
+        #Section3{
+            width: 100%;
+            height: 100%;
+            background-color: #6E6A8E;
+            background-size: cover;
+            background-position: center;
+        }
+        #Image7{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: 22%;
+            left: 3%;
+        }
+        #Image8{
+            display: flex;
+            position: relative;
+            width: 28%;
+            height: 40%;
+            top: -18%;
+            left: 35.5%;
+        }
+        #Image9{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -58%;
+            left: 66%;
+        }
+        #Text3{
+            display: inline-flex;
+            text-align:center;
+            position: relative;
+            width: 75%;
+            font-size: 23px;
+            top: -55%;
+            left: 13%;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        #Section4{
+            width: 100%;
+            height: 100%;
+            background-color: #CEAC86;
+            background-size: cover;
+            background-position: center;
+        }
+        #Image10{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: 22%;
+            left: 3%;
+        }
+        #Image11{
+            display: flex;
+            position: relative;
+            width: 28%;
+            height: 40%;
+            top: -18%;
+            left: 35.5%;
+        }
+        #Image12{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -58%;
+            left: 66%;
+        }
+        #Text4{
+            display: inline-flex;
+            text-align:center;
+            position: relative;
+            width: 75%;
+            font-size: 23px;
+            top: -55%;
+            left: 13%;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        #Alula{
+            position: absolute;
+            font-size: 5rem;
+            text-align: center;
+            width: 98vw;
+            height: 100vh;
+            font-family: 'El Messiri', sans-serif;
+        }
+        #Section5{
+            width: 100%;
+            height: 100%;
+            background-color: #94786A;
+            background-size: cover;
+            background-position: center;
+        }
+        #Image13{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: 22%;
+            left: 3%;
+        }
+        #Image14{
+            display: flex;
+            position: relative;
+            width: 28%;
+            height: 40%;
+            top: -18%;
+            left: 35.5%;
+        }
+        #Image15{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -58%;
+            left: 66%;
+        }
+        #Text5{
+            display: inline-flex;
+            text-align:center;
+            position: relative;
+            width: 75%;
+            font-size: 23px;
+            top: -55%;
+            left: 13%;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        #EP{
+            position: absolute;
+            font-size: 5rem;
+            text-align: center;
+            width: 98vw;
+            height: 100vh;
+            font-family: 'El Messiri', sans-serif;
+        }
+
+        #Section6{
+            width: 100%;
+            height: 100%;
+            background-color: #30584D;
+            background-size: cover;
+            background-position: center;
+        }
+        #Image16{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: 22%;
+            left: 3%;
+        }
+        #Image17{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -18%;
+            left: 34.5%;
+        }
+        #Image18{
+            display: flex;
+            position: relative;
+            width: 30%;
+            height: 40%;
+            top: -58%;
+            left: 66%;
+        }
+        #RijalAlma{
+            position: absolute;
+            font-size: 5rem;
+            text-align: center;
+            width: 98vw;
+            height: 100vh;
+            font-family: 'El Messiri', sans-serif;
+        }
+        #Text6{
+            display: inline-flex;
+            text-align:center;
+            position: relative;
+            width: 85%;
+            font-size: 23px;
+            top: -55%;
+            left: 8%;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        nav {
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    }
+ 
+nav ul {
+    width: 100%;
+	padding: 0;
+    margin: 0;
+    top: 0px;
+	list-style: none;
+	position: fixed;
+    text-align: right;
+	}
+	
+nav ul li {
+	display:inline-block;
+    z-index: 2;
+	}
+ 
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:white;
+	font-size:17px;
+	line-height: 60px;
+	text-decoration:none;
+}
+ 
+nav a:hover { 
+	background-color:#f5f5f552;
+    outline: auto;
+    outline-style: double;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Section1">Riyadh</a></li>
+            <li><a href="#Section2">Jeddah</a></li>
+            <li><a href="#Section3">Abha</a></li>
+            <li><a href="#Section4">Alula</a></li>
+            <li><a href="#Section5">Eastern Province</a></li>
+            <li><a href="#Section6">Rijal Alma</a></li>
+            <li><a href="https://www.visitsaudi.com/en">Learn more</a></li>
+    
+        </ul>
+    </nav>
+    <div id="Hero">
+        <div id="TitleContainer">
+        <p id="Title">Welcome To Saudi Arabia</p></div>
+    </div>
+    <div id="Section1">
+        <div id="Riyadh">Riyadh City</div>
+        <img id="Image1"src="abdulrhman-alkhnaifer-kUANvJwGN4M-unsplash.jpg">
+        <img id="Image2"src="pexels-mohammed-ajwad-9822971.jpg">
+        <img id="Image3"src="sami-salim-py8P4qr1f-8-unsplash.jpg">
+        <div id="Text1">Riyadh is a city of contrasts, where the ancient and the modern seamlessly blend together. 
+            The towering skyscrapers reach for the sky, while the traditional mud-brick houses huddle together in the old quarters. 
+            The city is a vibrant tapestry of culture and tradition, where the call to prayer echoes through the streets and the scent of spices and incense fills the air. 
+            The desert sands may be just a stone's throw away, but the city is a lush oasis, dotted with parks and gardens. 
+            It's a city that never stops moving, pulsing with energy, where opportunities are as endless as the horizon.</div>
+
+    </div>
+    <div id="Section2">
+        <div id="Jeddah">Jeddah City</div>
+        <img id="Image4"src="francesco-ungaro-raR2-jUmlDo-unsplash.jpg">
+        <img id="Image5"src="pexels-irfan-rahat-12771547.jpg">
+        <img id="Image6"src="masjid-3986723_1920.jpg">
+        <div id="Text2">Jeddah is a city of sea and sun, where the Red Sea kisses the shore and the palm trees sway to the rhythm of the waves. 
+            It's a place where the past and the present converge, where the old stone buildings stand tall alongside the sleek, modern architecture. 
+            The city is a melting pot of cultures, where the sweet aroma of Arabic coffee and the scent of cuisines mingle in the air. 
+            The winding, narrow streets of the historic Al-Balad neighborhood offer a glimpse into the city's rich history, while the bustling Corniche promenade is a hub of activity and entertainment. 
+            Jeddah is a city that embraces life, where the sound of laughter and the music of the sea are never far away.</div>
+    </div>
+    <div id="Section3">
+        <div id="Abha">Abha City</div>
+        <img id="Image7"src="Abha.jpg">
+        <img id="Image8"src="cable-890230_1920.jpg">
+        <img id="Image9"src="pexels-irfan-rahat-14454878.jpg">
+        <div id="Text3">Abha, nestled in the heart of the Asir Mountains, is a city of natural beauty, where the air is crisp and clear, and the scenery is nothing short of breathtaking. 
+            The city is surrounded by terraced farmlands, cascading waterfalls, and lush greenery, it's as if nature has painted the city with her own brush. The traditional architecture of Abha is a marvel to behold, with its unique design, that reflects the harmony between the city and its surroundings. 
+            The city is a treasure trove of culture, where the traditional art and music are still alive and well, and the people are known for their warmth and hospitality. 
+            Abha is a city that will take your breath away and leave you enchanted forever.</div>
+    </div>
+    <div id="Section4">
+        <div id="Alula">Alula Village</div>
+        <img id="Image10"src="aidil-zakky--X1Sr08i5p4-unsplash.jpg">
+        <img id="Image11"src="khawaja-umer-farooq-kz-Wom5Tc0Y-unsplash.jpg">
+        <img id="Image12"src="rabah-al-shammary-UBLQ_TLy82U-unsplash.jpg">
+        <div id="Text4">
+            Al Ula is a village steeped in history and mystery, where the sands of time have carved out ancient wonders and kept them hidden for centuries. 
+            It's a place where the past and the present coexist, where the ancient tombs, rock engravings, and ruined citadels tell the story of a civilization long gone, yet still present in every stone. 
+            The village is a living museum, where every step you take, uncovers a new chapter of history. The natural beauty of the area is a sight to behold, with the rugged mountains and the vast desert, it's as if the earth has created a canvas of colors and textures.
+            Al Ula is a place where one can escape the hustle and bustle of the modern world and find solace in the embrace of the past.
+        </div>
+    </div>
+    <div id="Section5">
+        <div id="EP">Eastern Province</div>
+        <img id="Image13"src="tanja-cotoaga-x0D-ZLg_eFg-unsplash.jpg">
+        <img id="Image14"src="f__EaoJq.jpg">
+        <img id="Image15"src="pexels-osamah-abdullah-14987621.jpg">
+        <div id="Text5">The Eastern Province of Saudi Arabia is a land of contrasts, where the desert sands meet the crystal waters of the Arabian Gulf. 
+            It's a place where history and tradition are etched into every rock and dune, and the modern world is embraced with open arms. The cities of the Eastern Province, such as Dammam, Al Khobar, and Dhahran, are bustling metropolises, filled with skyscrapers and cutting-edge technology. 
+            But just a short drive away, you'll find quaint fishing villages and oases, where time seems to have stood still. 
+            The Eastern Province is a land of opportunity, where the oil industry and the traditional Bedouin way of life coexist in harmony. 
+            It's a place that will surprise and delight you at every turn.</div>
+    </div>
+    <div id="Section6">
+        <div id="RijalAlma">Rijal Alma Village</div>
+        <img id="Image16"src="mustafa-ahmed-MWQxR33Pbck-unsplash.jpg">
+        <img id="Image17"src="mountains-5518787_1920.jpg">
+        <img id="Image18"src="satishaa-javali-BCtyiTMmhiw-unsplash.jpg">
+        <div id="Text6">Rijal Alma is a village like no other, a hidden gem tucked away in the mountains, where time seems to stand still. 
+            The village is a maze of winding cobblestone streets, lined with traditional houses, their white-washed walls adorned with intricate geometric patterns. 
+            The village is surrounded by terraced farmlands, where the locals grow their crops and tend to their livestock, just like their ancestors have done for centuries. 
+            The villagers are proud of their heritage and traditions, and they take great care to preserve them. The village is a haven of peace and tranquility, where the sound of running water from the nearby stream and the chirping of the birds are the only sounds you'll hear.
+            Rijal Alma is a village that will transport you to a different world, where the beauty of simplicity and tradition reigns supreme.</div>
+    </div>
+</body>
+</html>
